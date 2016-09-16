@@ -1,0 +1,42 @@
+<html>
+<script type="text/javascript">
+    function show_pic() {
+        //alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+    }
+
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
+    }
+
+</script>
+
+ <body>
+  <table width="100%" border=1>
+    <tr>
+     <td width="50%" onclick="show_text()">Text</td>
+      <td width="50%" onclick="show_pic()">Pic</td>
+       </tr>
+      <tr>
+     <td colspan="2">
+     <div id="c1" style="display:none">
+      Место происхождения английского языка и Англиканской церкви, а английское законодательство формирует основу юридических систем многих стран;
+      кроме того, Лондон был центром Британской империи, а страна — местом рождения Промышленной революции. Англия была первой промышленно развитой страной в мире, а также 
+      страной с парламентской демократией, конституционные, правительственные и юридические новшества которой были переняты другими нациями и странами.
+
+Королевство Англия, включая княжество Уэльс, являлось отдельным государством до 1 мая 1707 года, когда объединилось с Шотландией в Королевство Великобритания." 
+</div>
+
+ <div id="c2"><img width="100%" src="ln.jpg"> </div>
+
+</td>
+    </tr>
+   </table>
+  </body>
+</html>
