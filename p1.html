@@ -1,0 +1,79 @@
+<html>
+<script type="text/javascript">
+    function show_pic() {
+        //alert('hi');
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+        c3_elem.style.display = 'block';
+    }
+
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+    }
+    function show_quiz() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+    }
+
+    function check() {
+        q1elem = document.getElementById('g1');
+        if (q1elem.checked) {
+            alert('Молодец')
+
+
+        } else {
+            alert('Храбрец')
+        }
+        g3elem = document.getElementById('g3');
+        resultelem = document.getElementById('result');
+        resultelem.innerHTML = 'Вы уверены, что ' + g3elem.value + '?';
+    }
+
+</script>
+
+
+ <body bgcolor="aqua">
+ 
+  <table bgcolor="#0099ff" width="100%" border=1>
+    <tr>
+     <td width="33%" onclick="show_text()">Text</td>
+      <td width="33%" onclick="show_pic()">Pic</td>
+      <td width="34%" onclick="show_quiz()">Quiz</td>
+       </tr>
+      <tr>
+     <td colspan="3">
+     <div id="c1" style="display:none">
+    London is a capital of Great Britain :)
+</div>
+
+ <div id="c2"><img width="100%" src="ln.jpg"> </div>
+ <div id="c3"><input id="Checkbox1" type=checkbox />
+<label for = "g1">Прививка от гриппа</label>
+<br />
+<p />
+
+
+<b>2 + 2 = </b><br />
+<input name="g2" id="Radio1" type=radio /> <label for = "g23">3</label> <br />
+<input name="g2" id="Radio2" type=radio /><label for = "g34"> 4</label> <br />
+<input name="g2" id="Radio3" type=radio /><label for = "g45"> 5</label> <br />
+
+Сколько?
+<input id="Text1" type=text />
+<input onclick="check()" type=button value='check' />
+<div id="Div1">Тут будет ответ</div></div>
+
+</td>
+    </tr>
+   </table>
+  </body>
+</html>
